@@ -1,0 +1,3055 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\qrcode.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\qrcode.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jul 11 17:46:31 2024
+<BR><P>
+<H3>Maximum Stack Usage =       2460 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; Zbar_Test &rArr; zbar_scan_image &rArr; _zbar_qr_decode &rArr; qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[3]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">NMI_Handler</a><BR>
+ <LI><a href="#[4]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">HardFault_Handler</a><BR>
+ <LI><a href="#[5]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">MemManage_Handler</a><BR>
+ <LI><a href="#[6]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">BusFault_Handler</a><BR>
+ <LI><a href="#[7]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">UsageFault_Handler</a><BR>
+ <LI><a href="#[8]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">SVC_Handler</a><BR>
+ <LI><a href="#[9]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">DebugMon_Handler</a><BR>
+ <LI><a href="#[a]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a]">PendSV_Handler</a><BR>
+ <LI><a href="#[b]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[b]">SysTick_Handler</a><BR>
+ <LI><a href="#[1e]">ADC1_2_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1e]">ADC1_2_IRQHandler</a><BR>
+ <LI><a href="#[d8]">zbar_symbol_set_ref</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[e0]">_zbar_symbol_set_free</a><BR>
+ <LI><a href="#[df]">_zbar_image_scanner_recycle_syms</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[df]">_zbar_image_scanner_recycle_syms</a><BR>
+ <LI><a href="#[e8]">qr_reader_match_centers</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[e8]">qr_reader_match_centers</a><BR>
+ <LI><a href="#[57]">qsort</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[57]">qsort</a><BR>
+ <LI><a href="#[155]">rs_quartic_solve</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[155]">rs_quartic_solve</a><BR>
+ <LI><a href="#[166]">zbar_decoder_set_config</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[166]">zbar_decoder_set_config</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1e]">ADC1_2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3b]">ADC3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[6]">BusFault_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[21]">CAN1_RX1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[22]">CAN1_SCE_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[17]">DMA1_Channel1_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel1_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[18]">DMA1_Channel2_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel2_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[19]">DMA1_Channel3_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel3_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1a]">DMA1_Channel4_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel4_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1b]">DMA1_Channel5_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel5_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1c]">DMA1_Channel6_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel6_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1d]">DMA1_Channel7_IRQHandler</a> from dma_stm32f10x.o(i.DMA1_Channel7_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[44]">DMA2_Channel1_IRQHandler</a> from dma_stm32f10x.o(i.DMA2_Channel1_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[45]">DMA2_Channel2_IRQHandler</a> from dma_stm32f10x.o(i.DMA2_Channel2_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[46]">DMA2_Channel3_IRQHandler</a> from dma_stm32f10x.o(i.DMA2_Channel3_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[47]">DMA2_Channel4_5_IRQHandler</a> from dma_stm32f10x.o(i.DMA2_Channel4_5_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[9]">DebugMon_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[12]">EXTI0_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[34]">EXTI15_10_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[13]">EXTI1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[14]">EXTI2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[15]">EXTI3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[16]">EXTI4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[23]">EXTI9_5_IRQHandler</a> from main.o(i.EXTI9_5_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[10]">FLASH_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3c]">FSMC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4]">HardFault_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2c]">I2C1_ER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2b]">I2C1_EV_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2e]">I2C2_ER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2d]">I2C2_EV_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5]">MemManage_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3]">NMI_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[d]">PVD_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[a]">PendSV_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[11]">RCC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[35]">RTCAlarm_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[f]">RTC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2]">Reset_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3d]">SDIO_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2f]">SPI1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[30]">SPI2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3f]">SPI3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[8]">SVC_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[b]">SysTick_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[49]">SystemInit</a> from system_stm32f10x.o(i.SystemInit) referenced from startup_stm32f10x_hd.o(.text)
+ <LI><a href="#[e]">TAMPER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[24]">TIM1_BRK_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[27]">TIM1_CC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[26]">TIM1_TRG_COM_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[25]">TIM1_UP_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[28]">TIM2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[29]">TIM3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2a]">TIM4_IRQHandler</a> from time.o(i.TIM4_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3e]">TIM5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[42]">TIM6_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[43]">TIM7_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[37]">TIM8_BRK_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3a]">TIM8_CC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[39]">TIM8_TRG_COM_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[38]">TIM8_UP_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[40]">UART4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[41]">UART5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[31]">USART1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[32]">USART2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[33]">USART3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[36]">USBWakeUp_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1f]">USB_HP_CAN1_TX_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[20]">USB_LP_CAN1_RX0_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[7]">UsageFault_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[c]">WWDG_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4a]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_stm32f10x_hd.o(.text)
+ <LI><a href="#[4c]">fputc</a> from init.o(i.fputc) referenced from printf8.o(i.__0fprintf$8)
+ <LI><a href="#[4c]">fputc</a> from init.o(i.fputc) referenced from printf8.o(i.__0printf$8)
+ <LI><a href="#[48]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[51]">my_mem_init</a> from malloc.o(i.my_mem_init) referenced from malloc.o(.data)
+ <LI><a href="#[52]">my_mem_perused</a> from malloc.o(i.my_mem_perused) referenced from malloc.o(.data)
+ <LI><a href="#[4e]">qr_cmp_edge_pt</a> from qrdec.o(i.qr_cmp_edge_pt) referenced from qrdec.o(i.qr_finder_edge_pts_aff_classify)
+ <LI><a href="#[4e]">qr_cmp_edge_pt</a> from qrdec.o(i.qr_cmp_edge_pt) referenced from qrdec.o(i.qr_finder_edge_pts_hom_classify)
+ <LI><a href="#[4f]">qr_finder_center_cmp</a> from qrdec.o(i.qr_finder_center_cmp) referenced from qrdec.o(i.qr_finder_find_crossings)
+ <LI><a href="#[4d]">qr_finder_vline_cmp</a> from qrdec.o(i.qr_finder_vline_cmp) referenced from qrdec.o(i.qr_finder_centers_locate)
+ <LI><a href="#[50]">symbol_handler</a> from img_scanner.o(i.symbol_handler) referenced from img_scanner.o(i.zbar_image_scanner_create)
+ <LI><a href="#[4b]">zbar_image_free_data</a> from image.o(i.zbar_image_free_data) referenced from main.o(i.Zbar_Test)
+ <LI><a href="#[4b]">zbar_image_free_data</a> from image.o(i.zbar_image_free_data) referenced from image.o(i.zbar_image_free_data)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[4a]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(.text)
+</UL>
+<P><STRONG><a name="[172]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[53]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[5a]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[173]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[174]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[175]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[176]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+
+<P><STRONG><a name="[177]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[178]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+
+<P><STRONG><a name="[2]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>ADC3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>CAN1_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>CAN1_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>FSMC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>PVD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>RTCAlarm_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>SDIO_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>TIM1_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>TIM1_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>TIM5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>TIM6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>TIM7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>TIM8_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>TIM8_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>TIM8_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>UART4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>UART5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>USART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>USART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>USB_HP_CAN1_TX_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>USB_LP_CAN1_RX0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[55]"></a>__aeabi_ldivmod</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, ldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = __aeabi_ldivmod &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[136]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_init
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_init
+</UL>
+
+<P><STRONG><a name="[179]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[57]"></a>qsort</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, qsort.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + In Cycle
+<LI>Call Chain = qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_hom_classify
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_aff_classify
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+
+<P><STRONG><a name="[17a]"></a>___aeabi_memcpy8$move</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+
+<P><STRONG><a name="[17b]"></a>__aeabi_memcpy</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+
+<P><STRONG><a name="[17c]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+
+<P><STRONG><a name="[121]"></a>__aeabi_memmove</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memmove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_mul_x
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[17d]"></a>__aeabi_memmove4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+
+<P><STRONG><a name="[17e]"></a>__aeabi_memmove8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
+
+<P><STRONG><a name="[be]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[114]"></a>memchr</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, memchr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[fc]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_lookup
+</UL>
+
+<P><STRONG><a name="[56]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ldivmod
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[54]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[17f]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[59]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[180]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[58]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[181]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[5b]"></a>Buzzle_Init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, buzzle.o(i.Buzzle_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Buzzle_Init &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[5f]"></a>DMA1_Channel1_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel1_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[17]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel1_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel1_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[60]"></a>DMA1_Channel2_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel2_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[18]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel2_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel2_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[61]"></a>DMA1_Channel3_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel3_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel3_IRQHandler
+</UL>
+
+<P><STRONG><a name="[19]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel3_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel3_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel3_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[62]"></a>DMA1_Channel4_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel4_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel4_IRQHandler
+</UL>
+
+<P><STRONG><a name="[1a]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel4_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel4_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[63]"></a>DMA1_Channel5_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel5_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[1b]"></a>DMA1_Channel5_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel5_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel5_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel5_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[64]"></a>DMA1_Channel6_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel6_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel6_IRQHandler
+</UL>
+
+<P><STRONG><a name="[1c]"></a>DMA1_Channel6_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel6_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel6_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel6_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[65]"></a>DMA1_Channel7_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA1_Channel7_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel7_IRQHandler
+</UL>
+
+<P><STRONG><a name="[1d]"></a>DMA1_Channel7_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA1_Channel7_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA1_Channel7_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA1_Channel7_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[66]"></a>DMA2_Channel1_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA2_Channel1_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[44]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA2_Channel1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA2_Channel1_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel1_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[67]"></a>DMA2_Channel2_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA2_Channel2_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[45]"></a>DMA2_Channel2_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA2_Channel2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA2_Channel2_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel2_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[68]"></a>DMA2_Channel3_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA2_Channel3_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel3_IRQHandler
+</UL>
+
+<P><STRONG><a name="[46]"></a>DMA2_Channel3_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA2_Channel3_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA2_Channel3_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel3_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>DMA2_Channel4_5_IRQHandler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, dma_stm32f10x.o(i.DMA2_Channel4_5_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA2_Channel4_5_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel5_Event
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel4_Event
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[69]"></a>DMA2_Channel4_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA2_Channel4_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel4_5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[6a]"></a>DMA2_Channel5_Event</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, dma_stm32f10x.o(i.DMA2_Channel5_Event))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel4_5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[6b]"></a>EXTI7_Init</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, main.o(i.EXTI7_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EXTI7_Init &rArr; NVIC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[23]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, main.o(i.EXTI9_5_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI9_5_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[70]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, my_stm32f10x_exti.o(i.EXTI_ClearITPendingBit))
+<BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[6f]"></a>EXTI_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, my_stm32f10x_exti.o(i.EXTI_GetITStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[6d]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, my_stm32f10x_exti.o(i.EXTI_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI7_Init
+</UL>
+
+<P><STRONG><a name="[74]"></a>FSMC_NORSRAMCmd</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(i.FSMC_NORSRAMCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+</UL>
+
+<P><STRONG><a name="[73]"></a>FSMC_NORSRAMInit</STRONG> (Thumb, 230 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(i.FSMC_NORSRAMInit))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+</UL>
+
+<P><STRONG><a name="[71]"></a>FSMC_SRAM_Init</STRONG> (Thumb, 226 bytes, Stack size 96 bytes, sram.o(i.FSMC_SRAM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = FSMC_SRAM_Init &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMInit
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMCmd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[75]"></a>GPIO_Config</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, init.o(i.GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO_Config &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6c]"></a>GPIO_EXTILineConfig</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, stm32f10x_gpio.o(i.GPIO_EXTILineConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIO_EXTILineConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI7_Init
+</UL>
+
+<P><STRONG><a name="[5d]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzle_Init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOInit
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_OUT
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_IN
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
+</UL>
+
+<P><STRONG><a name="[85]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buzzle6_ON
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED5_ON
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED4_ON
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED0_ON
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+</UL>
+
+<P><STRONG><a name="[5e]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buzzle6_OFF
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED5_OFF
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED4_OFF
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzle_Init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
+</UL>
+
+<P><STRONG><a name="[76]"></a>LCD_Clear</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, lcd.o(i.LCD_Clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LCD_Clear &rArr; LCD_SetWindows &rArr; LCD_WriteRAM_Prepare &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData_16Bit
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetWindows
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[79]"></a>LCD_GPIOInit</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lcd.o(i.LCD_GPIOInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_GPIOInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+</UL>
+
+<P><STRONG><a name="[7a]"></a>LCD_Init</STRONG> (Thumb, 588 bytes, Stack size 8 bytes, lcd.o(i.LCD_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD_Init &rArr; LCD_Clear &rArr; LCD_SetWindows &rArr; LCD_WriteRAM_Prepare &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_direction
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_RESET
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7c]"></a>LCD_RESET</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd.o(i.LCD_RESET))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_RESET
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+</UL>
+
+<P><STRONG><a name="[77]"></a>LCD_SetWindows</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, lcd.o(i.LCD_SetWindows))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LCD_SetWindows &rArr; LCD_WriteRAM_Prepare &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteRAM_Prepare
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+</UL>
+
+<P><STRONG><a name="[7e]"></a>LCD_WR_DATA</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_DATA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_WR_DATA
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_WriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetWindows
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteReg
+</UL>
+
+<P><STRONG><a name="[7d]"></a>LCD_WR_REG</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_REG))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_WriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetWindows
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteReg
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteRAM_Prepare
+</UL>
+
+<P><STRONG><a name="[81]"></a>LCD_WriteRAM_Prepare</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lcd.o(i.LCD_WriteRAM_Prepare))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LCD_WriteRAM_Prepare &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+</UL>
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetWindows
+</UL>
+
+<P><STRONG><a name="[83]"></a>LCD_WriteReg</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, lcd.o(i.LCD_WriteReg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = LCD_WriteReg &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_direction
+</UL>
+
+<P><STRONG><a name="[80]"></a>LCD_direction</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, lcd.o(i.LCD_direction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_direction &rArr; LCD_WriteReg &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+</UL>
+
+<P><STRONG><a name="[84]"></a>LED0_ON</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.LED0_ON))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED0_ON
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[86]"></a>LED4_OFF</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.LED4_OFF))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED4_OFF
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[87]"></a>LED4_ON</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.LED4_ON))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED4_ON
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[88]"></a>LED5_OFF</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.LED5_OFF))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED5_OFF
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[89]"></a>LED5_ON</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.LED5_ON))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED5_ON
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[8a]"></a>LED_Init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, led.o(i.LED_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LED_Init &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[78]"></a>Lcd_WriteData_16Bit</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lcd.o(i.Lcd_WriteData_16Bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Lcd_WriteData_16Bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_WriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+</UL>
+
+<P><STRONG><a name="[6e]"></a>NVIC_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI7_Init
+</UL>
+
+<P><STRONG><a name="[8b]"></a>OV7670_Brightness</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ov7670.o(i.OV7670_Brightness))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OV7670_Brightness &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8d]"></a>OV7670_Color_Saturation</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, ov7670.o(i.OV7670_Color_Saturation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = OV7670_Color_Saturation &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8e]"></a>OV7670_Contrast</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ov7670.o(i.OV7670_Contrast))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OV7670_Contrast &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8f]"></a>OV7670_Init</STRONG> (Thumb, 232 bytes, Stack size 16 bytes, ov7670.o(i.OV7670_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OV7670_Init &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[92]"></a>OV7670_Light_Mode</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, ov7670.o(i.OV7670_Light_Mode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = OV7670_Light_Mode &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[93]"></a>OV7670_Special_Effects</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, ov7670.o(i.OV7670_Special_Effects))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = OV7670_Special_Effects &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[72]"></a>RCC_AHBPeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_AHBPeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+</UL>
+
+<P><STRONG><a name="[9c]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+</UL>
+
+<P><STRONG><a name="[5c]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzle_Init
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI7_Init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOInit
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
+</UL>
+
+<P><STRONG><a name="[b1]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 192 bytes, Stack size 12 bytes, stm32f10x_rcc.o(i.RCC_GetClocksFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+</UL>
+
+<P><STRONG><a name="[90]"></a>SCCB_Init</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, sccb.o(i.SCCB_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SCCB_Init &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_OUT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+</UL>
+
+<P><STRONG><a name="[95]"></a>SCCB_No_Ack</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, sccb.o(i.SCCB_No_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCCB_No_Ack
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[97]"></a>SCCB_RD_Byte</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, sccb.o(i.SCCB_RD_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SCCB_RD_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_OUT
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_IN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[91]"></a>SCCB_RD_Reg</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sccb.o(i.SCCB_RD_Reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SCCB_RD_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Stop
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Start
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Byte
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_No_Ack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+</UL>
+
+<P><STRONG><a name="[98]"></a>SCCB_SDA_IN</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, sccb.o(i.SCCB_SDA_IN))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SCCB_SDA_IN &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Byte
+</UL>
+
+<P><STRONG><a name="[94]"></a>SCCB_SDA_OUT</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sccb.o(i.SCCB_SDA_OUT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Byte
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
+</UL>
+
+<P><STRONG><a name="[99]"></a>SCCB_Start</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, sccb.o(i.SCCB_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCCB_Start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[9b]"></a>SCCB_Stop</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, sccb.o(i.SCCB_Stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SCCB_Stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[9a]"></a>SCCB_WR_Byte</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, sccb.o(i.SCCB_WR_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_OUT
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_SDA_IN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[8c]"></a>SCCB_WR_Reg</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, sccb.o(i.SCCB_WR_Reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SCCB_WR_Reg &rArr; SCCB_WR_Byte &rArr; SCCB_SDA_OUT &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Stop
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Special_Effects
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Light_Mode
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Contrast
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Color_Saturation
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Brightness
+</UL>
+
+<P><STRONG><a name="[7b]"></a>SPI2_Init</STRONG> (Thumb, 148 bytes, Stack size 32 bytes, spi.o(i.SPI2_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI2_Init &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+</UL>
+
+<P><STRONG><a name="[9e]"></a>SPI_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, my_stm32f10x_spi.o(i.SPI_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+</UL>
+
+<P><STRONG><a name="[9d]"></a>SPI_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, my_stm32f10x_spi.o(i.SPI_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI2_Init
+</UL>
+
+<P><STRONG><a name="[82]"></a>SPI_WriteByte</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, spi.o(i.SPI_WriteByte))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData_16Bit
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+
+<P><STRONG><a name="[9f]"></a>Serial_SendByte2</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, init.o(i.Serial_SendByte2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Serial_SendByte2
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendString2
+</UL>
+
+<P><STRONG><a name="[a2]"></a>Serial_SendByte4</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, init.o(i.Serial_SendByte4))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Serial_SendByte4
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendString4
+</UL>
+
+<P><STRONG><a name="[a3]"></a>Serial_SendString2</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, init.o(i.Serial_SendString2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Serial_SendString2 &rArr; Serial_SendByte2
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[a4]"></a>Serial_SendString4</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, init.o(i.Serial_SendString4))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Serial_SendString4 &rArr; Serial_SendByte4
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[a8]"></a>SysTick_CLKSourceConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, misc.o(i.SysTick_CLKSourceConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Systick_Config
+</UL>
+
+<P><STRONG><a name="[49]"></a>SystemInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SystemInit &rArr; SetSysClock &rArr; SetSysClockTo72
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(.text)
+</UL>
+<P><STRONG><a name="[a7]"></a>Systick_Config</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, init.o(i.Systick_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Systick_Config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_CLKSourceConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2a]"></a>TIM4_IRQHandler</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, time.o(i.TIM4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = TIM4_IRQHandler &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[ab]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearITPendingBit))
+<BR><BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
+</UL>
+
+<P><STRONG><a name="[a9]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f10x_tim.o(i.TIM_GetITStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_GetITStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ac]"></a>UART4_Init</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, init.o(i.UART4_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = UART4_Init &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[af]"></a>USART2_Init</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, init.o(i.USART2_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = USART2_Init &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ae]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+</UL>
+
+<P><STRONG><a name="[b0]"></a>USART_Config</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, init.o(i.USART_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = USART_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a1]"></a>USART_GetFlagStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_GetFlagStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte4
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte2
+</UL>
+
+<P><STRONG><a name="[ad]"></a>USART_Init</STRONG> (Thumb, 210 bytes, Stack size 56 bytes, stm32f10x_usart.o(i.USART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+</UL>
+
+<P><STRONG><a name="[a0]"></a>USART_SendData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_SendData))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte4
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendByte2
+</UL>
+
+<P><STRONG><a name="[b2]"></a>Zbar_Test</STRONG> (Thumb, 204 bytes, Stack size 48 bytes, main.o(i.Zbar_Test))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2460<LI>Call Chain = Zbar_Test &rArr; zbar_scan_image &rArr; _zbar_qr_decode &rArr; qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_next
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_get_type
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_get_data
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_set_size
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_set_format
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_set_data
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_set_config
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_first_symbol
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_destroy
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_create
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_get_symbol_name
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buzzle6_ON
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendString4
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_SendString2
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED5_ON
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED4_ON
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c3]"></a>Zbar_calloc</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, zbar_config.o(i.Zbar_calloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_create
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_create
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_create
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_create
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_cluster_lines
+</UL>
+
+<P><STRONG><a name="[c6]"></a>Zbar_free</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, zbar_config.o(i.Zbar_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_free
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_destroy
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_binarize
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_destroy
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_destroy
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_clear
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_clear
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_edge
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_cluster_lines
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_clear
+</UL>
+
+<P><STRONG><a name="[c8]"></a>Zbar_malloc</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, zbar_config.o(i.Zbar_malloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Zbar_malloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_create
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_binarize
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_create
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_edge
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+</UL>
+
+<P><STRONG><a name="[c9]"></a>Zbar_memcpy</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, zbar_config.o(i.Zbar_memcpy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_free_data
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_init
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_found_line
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_sym
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_copy
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_add
+</UL>
+
+<P><STRONG><a name="[cb]"></a>Zbar_memset</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, zbar_config.o(i.Zbar_memset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_reset
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_new_scan
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_init
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_reset
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_new_scan
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_zero
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_data_mask_fill
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+</UL>
+
+<P><STRONG><a name="[cc]"></a>Zbar_realloc</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, zbar_config.o(i.Zbar_realloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_found_line
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sym_add_point
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sym_add_point
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_add
+</UL>
+
+<P><STRONG><a name="[ce]"></a>__0fprintf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0fprintf$8), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[182]"></a>__1fprintf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0fprintf$8), UNUSED)
+
+<P><STRONG><a name="[e5]"></a>__2fprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0fprintf$8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2fprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_destroy
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dump_stats
+</UL>
+
+<P><STRONG><a name="[d0]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[183]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+
+<P><STRONG><a name="[aa]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_create
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
+</UL>
+
+<P><STRONG><a name="[184]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[185]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[186]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[133]"></a>_zbar_decoder_get_qr_finder_line</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, qr_finder.o(i._zbar_decoder_get_qr_finder_line))
+<BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_handler
+</UL>
+
+<P><STRONG><a name="[d3]"></a>_zbar_find_qr</STRONG> (Thumb, 268 bytes, Stack size 32 bytes, qr_finder.o(i._zbar_find_qr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pair_width
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_width
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decode_e
+</UL>
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decode_width
+</UL>
+
+<P><STRONG><a name="[d7]"></a>_zbar_image_free</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, image.o(i._zbar_image_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_refcnt
+</UL>
+
+<P><STRONG><a name="[da]"></a>_zbar_image_scanner_add_sym</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, img_scanner.o(i._zbar_image_scanner_add_sym))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = _zbar_image_scanner_add_sym &rArr; cache_sym &rArr; cache_lookup &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_sym
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[de]"></a>_zbar_image_scanner_alloc_sym</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, img_scanner.o(i._zbar_image_scanner_alloc_sym))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = _zbar_image_scanner_alloc_sym &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_sym
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[df]"></a>_zbar_image_scanner_recycle_syms</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, img_scanner.o(i._zbar_image_scanner_recycle_syms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112 + In Cycle
+<LI>Call Chain = _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recycle_syms
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_lookup
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[e1]"></a>_zbar_qr_create</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, qrdec.o(i._zbar_qr_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = _zbar_qr_create &rArr; qr_reader_init &rArr; isaac_init &rArr; Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+</UL>
+
+<P><STRONG><a name="[e3]"></a>_zbar_qr_decode</STRONG> (Thumb, 246 bytes, Stack size 64 bytes, qrdec.o(i._zbar_qr_decode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2348<LI>Call Chain = _zbar_qr_decode &rArr; qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_binarize
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_init
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_clear
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2fprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+</UL>
+
+<P><STRONG><a name="[eb]"></a>_zbar_qr_destroy</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, qrdec.o(i._zbar_qr_destroy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _zbar_qr_destroy &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2fprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+</UL>
+
+<P><STRONG><a name="[ec]"></a>_zbar_qr_found_line</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, qrdec.o(i._zbar_qr_found_line))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = _zbar_qr_found_line &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_handler
+</UL>
+
+<P><STRONG><a name="[16e]"></a>_zbar_qr_reset</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, qrdec.o(i._zbar_qr_reset))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+</UL>
+
+<P><STRONG><a name="[168]"></a>_zbar_refcnt_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, refcnt.o(i._zbar_refcnt_init))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_create
+</UL>
+
+<P><STRONG><a name="[dd]"></a>_zbar_symbol_free</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, symbol.o(i._zbar_symbol_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _zbar_symbol_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_refcnt
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_add_sym
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[ef]"></a>_zbar_symbol_set_create</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, symbol.o(i._zbar_symbol_set_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _zbar_symbol_set_create &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[e0]"></a>_zbar_symbol_set_free</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, symbol.o(i._zbar_symbol_set_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = _zbar_symbol_set_free &rArr; _zbar_symbol_refcnt &rArr; _zbar_symbol_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_recycle_image
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+</UL>
+
+<P><STRONG><a name="[f5]"></a>bch15_5_correct</STRONG> (Thumb, 82 bytes, Stack size 48 bytes, bch15_5.o(i.bch15_5_correct))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = bch15_5_correct &rArr; bch15_5_calc_epos &rArr; bch15_5_calc_omega
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_encode
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_syndrome
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_epos
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_fmt_info_decode
+</UL>
+
+<P><STRONG><a name="[f7]"></a>bch15_5_encode</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, bch15_5.o(i.bch15_5_encode))
+<BR><BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_correct
+</UL>
+
+<P><STRONG><a name="[fa]"></a>buzzle6_OFF</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.buzzle6_OFF))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = buzzle6_OFF
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bf]"></a>buzzle6_ON</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.buzzle6_ON))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = buzzle6_ON
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[fd]"></a>camera_refresh</STRONG> (Thumb, 230 bytes, Stack size 16 bytes, main.o(i.camera_refresh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = camera_refresh &rArr; LCD_SetWindows &rArr; LCD_WriteRAM_Prepare &rArr; LCD_WR_REG
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData_16Bit
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_direction
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetWindows
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7f]"></a>delay_ms</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, init.o(i.delay_ms))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_RESET
+</UL>
+
+<P><STRONG><a name="[96]"></a>delay_us</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, init.o(i.delay_us))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Stop
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Start
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Byte
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_No_Ack
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+</UL>
+
+<P><STRONG><a name="[4c]"></a>fputc</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, init.o(i.fputc))
+<BR>[Address Reference Count : 2]<UL><LI> printf8.o(i.__0fprintf$8)
+<LI> printf8.o(i.__0printf$8)
+</UL>
+<P><STRONG><a name="[ff]"></a>isaac_init</STRONG> (Thumb, 330 bytes, Stack size 72 bytes, isaac.o(i.isaac_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = isaac_init &rArr; Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_update
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_mix
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_init
+</UL>
+
+<P><STRONG><a name="[102]"></a>isaac_next_uint</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, isaac.o(i.isaac_next_uint))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = isaac_next_uint &rArr; isaac_next_uint32 &rArr; isaac_update
+</UL>
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_next_uint32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+</UL>
+
+<P><STRONG><a name="[103]"></a>isaac_next_uint32</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, isaac.o(i.isaac_next_uint32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = isaac_next_uint32 &rArr; isaac_update
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_update
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_next_uint
+</UL>
+
+<P><STRONG><a name="[48]"></a>main</STRONG> (Thumb, 200 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2460<LI>Call Chain = main &rArr; Zbar_Test &rArr; zbar_scan_image &rArr; _zbar_qr_decode &rArr; qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_init
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buzzle6_OFF
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_Init
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Systick_Config
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Special_Effects
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Light_Mode
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Contrast
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Color_Saturation
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV7670_Brightness
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED5_OFF
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED4_OFF
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED0_ON
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_SRAM_Init
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buzzle_Init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;camera_refresh
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI7_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[104]"></a>my_mem_free</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, malloc.o(i.my_mem_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = my_mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
+</UL>
+
+<P><STRONG><a name="[51]"></a>my_mem_init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, malloc.o(i.my_mem_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = my_mem_init &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> malloc.o(.data)
+</UL>
+<P><STRONG><a name="[105]"></a>my_mem_malloc</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, malloc.o(i.my_mem_malloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = my_mem_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
+</UL>
+
+<P><STRONG><a name="[52]"></a>my_mem_perused</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, malloc.o(i.my_mem_perused))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = my_mem_perused
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> malloc.o(.data)
+</UL>
+<P><STRONG><a name="[c7]"></a>myfree</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, malloc.o(i.myfree))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
+</UL>
+
+<P><STRONG><a name="[c4]"></a>mymalloc</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, malloc.o(i.mymalloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+</UL>
+
+<P><STRONG><a name="[ca]"></a>mymemcpy</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, malloc.o(i.mymemcpy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = mymemcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
+</UL>
+
+<P><STRONG><a name="[c5]"></a>mymemset</STRONG> (Thumb, 20 bytes, Stack size 12 bytes, malloc.o(i.mymemset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = mymemset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_init
+</UL>
+
+<P><STRONG><a name="[cd]"></a>myrealloc</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, malloc.o(i.myrealloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+</UL>
+
+<P><STRONG><a name="[e6]"></a>qr_binarize</STRONG> (Thumb, 644 bytes, Stack size 72 bytes, binarize.o(i.qr_binarize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = qr_binarize &rArr; Zbar_malloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+</UL>
+
+<P><STRONG><a name="[ea]"></a>qr_code_data_list_clear</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, qrdec.o(i.qr_code_data_list_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = qr_code_data_list_clear &rArr; qr_code_data_clear &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_init
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+</UL>
+
+<P><STRONG><a name="[e9]"></a>qr_code_data_list_extract_text</STRONG> (Thumb, 1292 bytes, Stack size 216 bytes, qrdectxt.o(i.qr_code_data_list_extract_text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = qr_code_data_list_extract_text &rArr; _zbar_image_scanner_add_sym &rArr; cache_sym &rArr; cache_lookup &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_create
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_add_sym
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_utf8_to_gb18030
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sym_add_point
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memchr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+</UL>
+
+<P><STRONG><a name="[e7]"></a>qr_code_data_list_init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, qrdec.o(i.qr_code_data_list_init))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_clear
+</UL>
+
+<P><STRONG><a name="[141]"></a>qr_ihypot</STRONG> (Thumb, 264 bytes, Stack size 40 bytes, util.o(i.qr_ihypot))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = qr_ihypot
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+</UL>
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit
+</UL>
+
+<P><STRONG><a name="[10b]"></a>qr_ilog</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, util.o(i.qr_ilog))
+<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ihypot
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_points
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_init
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_init
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_line_step
+</UL>
+
+<P><STRONG><a name="[130]"></a>qr_isqrt</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, util.o(i.qr_isqrt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = qr_isqrt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+</UL>
+
+<P><STRONG><a name="[e8]"></a>qr_reader_match_centers</STRONG> (Thumb, 488 bytes, Stack size 136 bytes, qrdec.o(i.qr_reader_match_centers))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2284 + In Cycle
+<LI>Call Chain = qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_ccw
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_add
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+</UL>
+
+<P><STRONG><a name="[120]"></a>rs_correct</STRONG> (Thumb, 370 bytes, Stack size 1104 bytes, rs.o(i.rs_correct))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1524<LI>Call Chain = rs_correct &rArr; rs_modified_berlekamp_massey &rArr; rs_poly_mult &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gdiv
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_find_roots
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_calc_syndrome
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[144]"></a>rs_gf256_init</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, rs.o(i.rs_gf256_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rs_gf256_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_init
+</UL>
+
+<P><STRONG><a name="[107]"></a>zbar_decode_width</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, decoder.o(i.zbar_decode_width))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_find_qr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_edge
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_flush
+</UL>
+
+<P><STRONG><a name="[162]"></a>zbar_decoder_create</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, decoder.o(i.zbar_decoder_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = zbar_decoder_create &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_reset
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+</UL>
+
+<P><STRONG><a name="[164]"></a>zbar_decoder_destroy</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, decoder.o(i.zbar_decoder_destroy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = zbar_decoder_destroy &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+</UL>
+
+<P><STRONG><a name="[15f]"></a>zbar_decoder_get_data</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_get_data))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[160]"></a>zbar_decoder_get_data_length</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_get_data_length))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[15e]"></a>zbar_decoder_get_type</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_get_type))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[15d]"></a>zbar_decoder_get_userdata</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_get_userdata))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[165]"></a>zbar_decoder_new_scan</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, decoder.o(i.zbar_decoder_new_scan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = zbar_decoder_new_scan &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_new_scan
+</UL>
+
+<P><STRONG><a name="[163]"></a>zbar_decoder_reset</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, decoder.o(i.zbar_decoder_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = zbar_decoder_reset &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_create
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_reset
+</UL>
+
+<P><STRONG><a name="[166]"></a>zbar_decoder_set_config</STRONG> (Thumb, 198 bytes, Stack size 24 bytes, decoder.o(i.zbar_decoder_set_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + In Cycle
+<LI>Call Chain = zbar_decoder_set_config &rArr;  zbar_decoder_set_config (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_config
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decoder_set_config_bool
+</UL>
+<BR>[Called By]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_config
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_set_config
+</UL>
+
+<P><STRONG><a name="[16b]"></a>zbar_decoder_set_handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_set_handler))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+</UL>
+
+<P><STRONG><a name="[16a]"></a>zbar_decoder_set_userdata</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, decoder.o(i.zbar_decoder_set_userdata))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+</UL>
+
+<P><STRONG><a name="[bd]"></a>zbar_get_symbol_name</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, symbol.o(i.zbar_get_symbol_name))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[b5]"></a>zbar_image_create</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, image.o(i.zbar_image_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = zbar_image_create &rArr; _zbar_image_refcnt &rArr; _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt_init
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_refcnt
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_free_data
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[c1]"></a>zbar_image_destroy</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, image.o(i.zbar_image_destroy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = zbar_image_destroy &rArr; _zbar_image_refcnt &rArr; _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[ba]"></a>zbar_image_first_symbol</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, image.o(i.zbar_image_first_symbol))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[4b]"></a>zbar_image_free_data</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, image.o(i.zbar_image_free_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = zbar_image_free_data &rArr; zbar_image_create &rArr; _zbar_image_refcnt &rArr; _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_create
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_set_data
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> main.o(i.Zbar_Test)
+<LI> image.o(i.zbar_image_free_data)
+</UL>
+<P><STRONG><a name="[b3]"></a>zbar_image_scanner_create</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, img_scanner.o(i.zbar_image_scanner_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = zbar_image_scanner_create &rArr; _zbar_qr_create &rArr; qr_reader_init &rArr; isaac_init &rArr; Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_userdata
+<LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_handler
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_create
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_set_config
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_create
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_create
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[c2]"></a>zbar_image_scanner_destroy</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, img_scanner.o(i.zbar_image_scanner_destroy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = zbar_image_scanner_destroy &rArr; _zbar_symbol_set_free &rArr; _zbar_symbol_refcnt &rArr; _zbar_symbol_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_destroy
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_destroy
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_destroy
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dump_stats
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[16d]"></a>zbar_image_scanner_recycle_image</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, img_scanner.o(i.zbar_image_scanner_recycle_image))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = zbar_image_scanner_recycle_image &rArr; recycle_syms &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recycle_syms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+</UL>
+
+<P><STRONG><a name="[b4]"></a>zbar_image_scanner_set_config</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, img_scanner.o(i.zbar_image_scanner_set_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = zbar_image_scanner_set_config &rArr; zbar_decoder_set_config &rArr;  zbar_decoder_set_config (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[b8]"></a>zbar_image_set_data</STRONG> (Thumb, 28 bytes, Stack size 24 bytes, image.o(i.zbar_image_set_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = zbar_image_set_data &rArr; zbar_image_free_data &rArr; zbar_image_create &rArr; _zbar_image_refcnt &rArr; _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_free_data
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[b6]"></a>zbar_image_set_format</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, image.o(i.zbar_image_set_format))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[b7]"></a>zbar_image_set_size</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, image.o(i.zbar_image_set_size))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[b9]"></a>zbar_scan_image</STRONG> (Thumb, 852 bytes, Stack size 64 bytes, img_scanner.o(i.zbar_scan_image))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2412<LI>Call Chain = zbar_scan_image &rArr; _zbar_qr_decode &rArr; qr_reader_match_centers &rArr;  qr_reader_match_centers (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_recycle_image
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_new_scan
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_y
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_create
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_reset
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;quiet_border
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2fprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[16f]"></a>zbar_scan_y</STRONG> (Thumb, 422 bytes, Stack size 56 bytes, scanner.o(i.zbar_scan_y))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = zbar_scan_y &rArr; process_edge &rArr; zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_edge
+<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_thresh
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+</UL>
+
+<P><STRONG><a name="[169]"></a>zbar_scanner_create</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, scanner.o(i.zbar_scanner_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = zbar_scanner_create &rArr; Zbar_malloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_create
+</UL>
+
+<P><STRONG><a name="[16c]"></a>zbar_scanner_destroy</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, scanner.o(i.zbar_scanner_destroy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = zbar_scanner_destroy &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+</UL>
+
+<P><STRONG><a name="[14a]"></a>zbar_scanner_flush</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, scanner.o(i.zbar_scanner_flush))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = zbar_scanner_flush &rArr; process_edge &rArr; zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decode_width
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_edge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_new_scan
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;quiet_border
+</UL>
+
+<P><STRONG><a name="[134]"></a>zbar_scanner_get_edge</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, scanner.o(i.zbar_scanner_get_edge))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = zbar_scanner_get_edge
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_handler
+</UL>
+
+<P><STRONG><a name="[161]"></a>zbar_scanner_get_width</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, scanner.o(i.zbar_scanner_get_width))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[14b]"></a>zbar_scanner_new_scan</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, scanner.o(i.zbar_scanner_new_scan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = zbar_scanner_new_scan &rArr; zbar_scanner_flush &rArr; process_edge &rArr; zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_new_scan
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_flush
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;quiet_border
+</UL>
+
+<P><STRONG><a name="[171]"></a>zbar_scanner_reset</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, scanner.o(i.zbar_scanner_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = zbar_scanner_reset &rArr; zbar_decoder_reset &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_create
+</UL>
+
+<P><STRONG><a name="[bc]"></a>zbar_symbol_get_data</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, symbol.o(i.zbar_symbol_get_data))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[bb]"></a>zbar_symbol_get_type</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, symbol.o(i.zbar_symbol_get_type))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[c0]"></a>zbar_symbol_next</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, symbol.o(i.zbar_symbol_next))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_Test
+</UL>
+
+<P><STRONG><a name="[d8]"></a>zbar_symbol_set_ref</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, symbol.o(i.zbar_symbol_set_ref))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + In Cycle
+<LI>Call Chain = zbar_symbol_set_ref &rArr;  _zbar_symbol_set_free (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_free
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+</UL>
+
+<P><STRONG><a name="[115]"></a>zbar_utf8_to_gb18030</STRONG> (Thumb, 228 bytes, Stack size 28 bytes, qrdectxt.o(i.zbar_utf8_to_gb18030))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = zbar_utf8_to_gb18030
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[167]"></a>decoder_set_config_bool</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, decoder.o(i.decoder_set_config_bool))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = decoder_set_config_bool
+</UL>
+<BR>[Called By]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_set_config
+</UL>
+
+<P><STRONG><a name="[d9]"></a>_zbar_image_refcnt</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, image.o(i._zbar_image_refcnt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _zbar_image_refcnt &rArr; _zbar_image_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_destroy
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_create
+</UL>
+
+<P><STRONG><a name="[dc]"></a>_zbar_refcnt</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, img_scanner.o(i._zbar_refcnt))
+<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_add_sym
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recycle_syms
+</UL>
+
+<P><STRONG><a name="[fb]"></a>cache_lookup</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, img_scanner.o(i.cache_lookup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = cache_lookup &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_sym
+</UL>
+
+<P><STRONG><a name="[db]"></a>cache_sym</STRONG> (Thumb, 174 bytes, Stack size 32 bytes, img_scanner.o(i.cache_sym))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = cache_sym &rArr; cache_lookup &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cache_lookup
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_add_sym
+</UL>
+
+<P><STRONG><a name="[fe]"></a>dump_stats</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, img_scanner.o(i.dump_stats))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dump_stats &rArr; __2fprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2fprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_destroy
+</UL>
+
+<P><STRONG><a name="[132]"></a>qr_handler</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, img_scanner.o(i.qr_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = qr_handler &rArr; _zbar_qr_found_line &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_get_edge
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_found_line
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_decoder_get_qr_finder_line
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[149]"></a>quiet_border</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, img_scanner.o(i.quiet_border))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = quiet_border &rArr; zbar_scanner_new_scan &rArr; zbar_scanner_flush &rArr; process_edge &rArr; zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_new_scan
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_flush
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_image
+</UL>
+
+<P><STRONG><a name="[14c]"></a>recycle_syms</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, img_scanner.o(i.recycle_syms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = recycle_syms &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_recycle_syms
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_image_scanner_recycle_image
+</UL>
+
+<P><STRONG><a name="[15c]"></a>sym_add_point</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, img_scanner.o(i.sym_add_point))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = sym_add_point &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;symbol_handler
+</UL>
+
+<P><STRONG><a name="[50]"></a>symbol_handler</STRONG> (Thumb, 238 bytes, Stack size 48 bytes, img_scanner.o(i.symbol_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = symbol_handler &rArr; _zbar_image_scanner_add_sym &rArr; cache_sym &rArr; cache_lookup &rArr; _zbar_image_scanner_recycle_syms &rArr;  _zbar_image_scanner_recycle_syms (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_get_userdata
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_get_type
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_get_data_length
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decoder_get_data
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_alloc_sym
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_get_width
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_get_edge
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_image_scanner_add_sym
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sym_add_point
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_handler
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> img_scanner.o(i.zbar_image_scanner_create)
+</UL>
+<P><STRONG><a name="[170]"></a>calc_thresh</STRONG> (Thumb, 64 bytes, Stack size 12 bytes, scanner.o(i.calc_thresh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = calc_thresh
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_y
+</UL>
+
+<P><STRONG><a name="[106]"></a>process_edge</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, scanner.o(i.process_edge))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = process_edge &rArr; zbar_decode_width &rArr; _zbar_find_qr &rArr; pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_decode_width
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scanner_flush
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_scan_y
+</UL>
+
+<P><STRONG><a name="[ee]"></a>_zbar_refcnt</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, symbol.o(i._zbar_refcnt))
+<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_refcnt
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_create
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;zbar_symbol_set_ref
+</UL>
+
+<P><STRONG><a name="[ed]"></a>_zbar_symbol_refcnt</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, symbol.o(i._zbar_symbol_refcnt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _zbar_symbol_refcnt &rArr; _zbar_symbol_free &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_refcnt
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_symbol_set_free
+</UL>
+
+<P><STRONG><a name="[f0]"></a>bch15_5_calc_epos</STRONG> (Thumb, 134 bytes, Stack size 48 bytes, bch15_5.o(i.bch15_5_calc_epos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = bch15_5_calc_epos &rArr; bch15_5_calc_omega
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gf16_hmul
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_omega
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_correct
+</UL>
+
+<P><STRONG><a name="[f1]"></a>bch15_5_calc_omega</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, bch15_5.o(i.bch15_5_calc_omega))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bch15_5_calc_omega
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gf16_mul
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gf16_div
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_epos
+</UL>
+
+<P><STRONG><a name="[f6]"></a>bch15_5_calc_syndrome</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, bch15_5.o(i.bch15_5_calc_syndrome))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = bch15_5_calc_syndrome
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_correct
+</UL>
+
+<P><STRONG><a name="[f4]"></a>gf16_div</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, bch15_5.o(i.gf16_div))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_omega
+</UL>
+
+<P><STRONG><a name="[f2]"></a>gf16_hmul</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, bch15_5.o(i.gf16_hmul))
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_epos
+</UL>
+
+<P><STRONG><a name="[f3]"></a>gf16_mul</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, bch15_5.o(i.gf16_mul))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_calc_omega
+</UL>
+
+<P><STRONG><a name="[100]"></a>isaac_mix</STRONG> (Thumb, 184 bytes, Stack size 0 bytes, isaac.o(i.isaac_mix))
+<BR><BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_init
+</UL>
+
+<P><STRONG><a name="[101]"></a>isaac_update</STRONG> (Thumb, 544 bytes, Stack size 24 bytes, isaac.o(i.isaac_update))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = isaac_update
+</UL>
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_next_uint32
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_init
+</UL>
+
+<P><STRONG><a name="[f8]"></a>bch18_6_correct</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, qrdec.o(i.bch18_6_correct))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = bch18_6_correct &rArr; qr_hamming_dist
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hamming_dist
+</UL>
+<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_version_decode
+</UL>
+
+<P><STRONG><a name="[108]"></a>qr_aff_init</STRONG> (Thumb, 246 bytes, Stack size 56 bytes, qrdec.o(i.qr_aff_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = qr_aff_init &rArr; qr_point_ccw
+</UL>
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_ccw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[10a]"></a>qr_aff_line_step</STRONG> (Thumb, 278 bytes, Stack size 56 bytes, qrdec.o(i.qr_aff_line_step))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = qr_aff_line_step
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[13e]"></a>qr_aff_project</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, qrdec.o(i.qr_aff_project))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_aff_project
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[126]"></a>qr_aff_unproject</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, qrdec.o(i.qr_aff_unproject))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_aff_unproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_aff_classify
+</UL>
+
+<P><STRONG><a name="[10c]"></a>qr_alignment_pattern_fetch</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, qrdec.o(i.qr_alignment_pattern_fetch))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = qr_alignment_pattern_fetch &rArr; qr_img_get_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_img_get_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+</UL>
+
+<P><STRONG><a name="[10e]"></a>qr_alignment_pattern_search</STRONG> (Thumb, 1728 bytes, Stack size 416 bytes, qrdec.o(i.qr_alignment_pattern_search))
+<BR><BR>[Stack]<UL><LI>Max Depth = 484<LI>Call Chain = qr_alignment_pattern_search &rArr; qr_finder_locate_crossing
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_fproject
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hamming_dist
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_locate_crossing
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_fetch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[4e]"></a>qr_cmp_edge_pt</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, qrdec.o(i.qr_cmp_edge_pt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_cmp_edge_pt
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> qrdec.o(i.qr_finder_edge_pts_aff_classify)
+<LI> qrdec.o(i.qr_finder_edge_pts_hom_classify)
+</UL>
+<P><STRONG><a name="[111]"></a>qr_code_data_clear</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, qrdec.o(i.qr_code_data_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = qr_code_data_clear &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_clear
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[112]"></a>qr_code_data_list_add</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, qrdec.o(i.qr_code_data_list_add))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = qr_code_data_list_add &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+</UL>
+
+<P><STRONG><a name="[116]"></a>qr_code_data_parse</STRONG> (Thumb, 1098 bytes, Stack size 80 bytes, qrdec.o(i.qr_code_data_parse))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = qr_code_data_parse &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_pack_buf_read
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_pack_buf_init
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_pack_buf_avail
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[11a]"></a>qr_code_decode</STRONG> (Thumb, 426 bytes, Stack size 160 bytes, qrdec.o(i.qr_code_decode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1684<LI>Call Chain = qr_code_decode &rArr; rs_correct &rArr; rs_modified_berlekamp_massey &rArr; rs_poly_mult &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_sample
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_clear
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_samples_unpack
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_ncodewords
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_clear
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memmove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[11d]"></a>qr_code_ncodewords</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, qrdec.o(i.qr_code_ncodewords))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = qr_code_ncodewords
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[122]"></a>qr_data_mask_fill</STRONG> (Thumb, 528 bytes, Stack size 32 bytes, qrdec.o(i.qr_data_mask_fill))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = qr_data_mask_fill &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_sample
+</UL>
+
+<P><STRONG><a name="[4f]"></a>qr_finder_center_cmp</STRONG> (Thumb, 110 bytes, Stack size 20 bytes, qrdec.o(i.qr_finder_center_cmp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = qr_finder_center_cmp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> qrdec.o(i.qr_finder_find_crossings)
+</UL>
+<P><STRONG><a name="[e4]"></a>qr_finder_centers_locate</STRONG> (Thumb, 288 bytes, Stack size 96 bytes, qrdec.o(i.qr_finder_centers_locate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = qr_finder_centers_locate &rArr; qr_finder_find_crossings &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_cluster_lines
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_decode
+</UL>
+
+<P><STRONG><a name="[123]"></a>qr_finder_cluster_lines</STRONG> (Thumb, 542 bytes, Stack size 64 bytes, qrdec.o(i.qr_finder_cluster_lines))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = qr_finder_cluster_lines &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+</UL>
+
+<P><STRONG><a name="[125]"></a>qr_finder_edge_pts_aff_classify</STRONG> (Thumb, 226 bytes, Stack size 40 bytes, qrdec.o(i.qr_finder_edge_pts_aff_classify))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = qr_finder_edge_pts_aff_classify &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_translate
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_unproject
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[12b]"></a>qr_finder_edge_pts_fill</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, qrdec.o(i.qr_finder_edge_pts_fill))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = qr_finder_edge_pts_fill
+</UL>
+<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+</UL>
+
+<P><STRONG><a name="[128]"></a>qr_finder_edge_pts_hom_classify</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, qrdec.o(i.qr_finder_edge_pts_hom_classify))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = qr_finder_edge_pts_hom_classify &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_translate
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_unproject
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[146]"></a>qr_finder_estimate_module_size_and_version</STRONG> (Thumb, 548 bytes, Stack size 96 bytes, qrdec.o(i.qr_finder_estimate_module_size_and_version))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = qr_finder_estimate_module_size_and_version
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[124]"></a>qr_finder_find_crossings</STRONG> (Thumb, 546 bytes, Stack size 96 bytes, qrdec.o(i.qr_finder_find_crossings))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = qr_finder_find_crossings &rArr; Zbar_calloc &rArr; mymalloc &rArr; my_mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_lines_are_crossing
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_fill
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_centers_locate
+</UL>
+
+<P><STRONG><a name="[12c]"></a>qr_finder_fmt_info_decode</STRONG> (Thumb, 1034 bytes, Stack size 160 bytes, qrdec.o(i.qr_finder_fmt_info_decode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = qr_finder_fmt_info_decode &rArr; bch15_5_correct &rArr; bch15_5_calc_epos &rArr; bch15_5_calc_omega
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch15_5_correct
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_img_get_bit
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[12a]"></a>qr_finder_lines_are_crossing</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, qrdec.o(i.qr_finder_lines_are_crossing))
+<BR><BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_find_crossings
+</UL>
+
+<P><STRONG><a name="[110]"></a>qr_finder_locate_crossing</STRONG> (Thumb, 424 bytes, Stack size 68 bytes, qrdec.o(i.qr_finder_locate_crossing))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = qr_finder_locate_crossing
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+</UL>
+
+<P><STRONG><a name="[13c]"></a>qr_finder_quick_crossing_check</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, qrdec.o(i.qr_finder_quick_crossing_check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = qr_finder_quick_crossing_check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[12e]"></a>qr_finder_ransac</STRONG> (Thumb, 500 bytes, Stack size 104 bytes, qrdec.o(i.qr_finder_ransac))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = qr_finder_ransac &rArr; isaac_next_uint &rArr; isaac_next_uint32 &rArr; isaac_update
+</UL>
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_next_uint
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_isqrt
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_translate
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_distance2
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_ccw
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_unproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[131]"></a>qr_finder_version_decode</STRONG> (Thumb, 388 bytes, Stack size 120 bytes, qrdec.o(i.qr_finder_version_decode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = qr_finder_version_decode &rArr; bch18_6_correct &rArr; qr_hamming_dist
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_img_get_bit
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fproject
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch18_6_correct
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[4d]"></a>qr_finder_vline_cmp</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, qrdec.o(i.qr_finder_vline_cmp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_finder_vline_cmp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> qrdec.o(i.qr_finder_centers_locate)
+</UL>
+<P><STRONG><a name="[f9]"></a>qr_hamming_dist</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, qrdec.o(i.qr_hamming_dist))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = qr_hamming_dist
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bch18_6_correct
+</UL>
+
+<P><STRONG><a name="[10f]"></a>qr_hom_cell_fproject</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, qrdec.o(i.qr_hom_cell_fproject))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_hom_cell_fproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_sample
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_project
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+</UL>
+
+<P><STRONG><a name="[135]"></a>qr_hom_cell_init</STRONG> (Thumb, 2832 bytes, Stack size 304 bytes, qrdec.o(i.qr_hom_cell_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = qr_hom_cell_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[137]"></a>qr_hom_cell_project</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, qrdec.o(i.qr_hom_cell_project))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = qr_hom_cell_project &rArr; qr_hom_cell_fproject
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_fproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+</UL>
+
+<P><STRONG><a name="[138]"></a>qr_hom_fit</STRONG> (Thumb, 4248 bytes, Stack size 384 bytes, qrdec.o(i.qr_hom_fit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 868<LI>Call Chain = qr_hom_fit &rArr; qr_alignment_pattern_search &rArr; qr_finder_locate_crossing
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_isect
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_points
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_edge
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_eval
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_init
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_init
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_quick_crossing_check
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_locate_crossing
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_unproject
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_project
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_line_step
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+</UL>
+
+<P><STRONG><a name="[12d]"></a>qr_hom_fproject</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, qrdec.o(i.qr_hom_fproject))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_hom_fproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_version_decode
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_fmt_info_decode
+</UL>
+
+<P><STRONG><a name="[140]"></a>qr_hom_init</STRONG> (Thumb, 2666 bytes, Stack size 288 bytes, qrdec.o(i.qr_hom_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = qr_hom_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[129]"></a>qr_hom_unproject</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, qrdec.o(i.qr_hom_unproject))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = qr_hom_unproject
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_hom_classify
+</UL>
+
+<P><STRONG><a name="[10d]"></a>qr_img_get_bit</STRONG> (Thumb, 152 bytes, Stack size 20 bytes, qrdec.o(i.qr_img_get_bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = qr_img_get_bit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_sample
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_version_decode
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_fmt_info_decode
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_fetch
+</UL>
+
+<P><STRONG><a name="[13a]"></a>qr_line_eval</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, qrdec.o(i.qr_line_eval))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = qr_line_eval
+</UL>
+<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_orient
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[142]"></a>qr_line_fit</STRONG> (Thumb, 338 bytes, Stack size 80 bytes, qrdec.o(i.qr_line_fit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = qr_line_fit &rArr; qr_ihypot
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ihypot
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_points
+</UL>
+
+<P><STRONG><a name="[13b]"></a>qr_line_fit_finder_edge</STRONG> (Thumb, 112 bytes, Stack size 40 bytes, qrdec.o(i.qr_line_fit_finder_edge))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = qr_line_fit_finder_edge &rArr; qr_line_fit_points &rArr; qr_line_fit &rArr; qr_ihypot
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_orient
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_points
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[139]"></a>qr_line_fit_finder_pair</STRONG> (Thumb, 326 bytes, Stack size 64 bytes, qrdec.o(i.qr_line_fit_finder_pair))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = qr_line_fit_finder_pair &rArr; qr_line_fit_points &rArr; qr_line_fit &rArr; qr_ihypot
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_orient
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_points
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_project
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[13d]"></a>qr_line_fit_points</STRONG> (Thumb, 808 bytes, Stack size 104 bytes, qrdec.o(i.qr_line_fit_points))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = qr_line_fit_points &rArr; qr_line_fit &rArr; qr_ihypot
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_edge
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[13f]"></a>qr_line_isect</STRONG> (Thumb, 118 bytes, Stack size 20 bytes, qrdec.o(i.qr_line_isect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = qr_line_isect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+</UL>
+
+<P><STRONG><a name="[143]"></a>qr_line_orient</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, qrdec.o(i.qr_line_orient))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = qr_line_orient &rArr; qr_line_eval
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_eval
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_pair
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_line_fit_finder_edge
+</UL>
+
+<P><STRONG><a name="[119]"></a>qr_pack_buf_avail</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, qrdec.o(i.qr_pack_buf_avail))
+<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+</UL>
+
+<P><STRONG><a name="[117]"></a>qr_pack_buf_init</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, qrdec.o(i.qr_pack_buf_init))
+<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+</UL>
+
+<P><STRONG><a name="[118]"></a>qr_pack_buf_read</STRONG> (Thumb, 118 bytes, Stack size 20 bytes, qrdec.o(i.qr_pack_buf_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = qr_pack_buf_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_parse
+</UL>
+
+<P><STRONG><a name="[109]"></a>qr_point_ccw</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, qrdec.o(i.qr_point_ccw))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = qr_point_ccw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_init
+</UL>
+
+<P><STRONG><a name="[12f]"></a>qr_point_distance2</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, qrdec.o(i.qr_point_distance2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = qr_point_distance2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_try_configuration
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+</UL>
+
+<P><STRONG><a name="[127]"></a>qr_point_translate</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, qrdec.o(i.qr_point_translate))
+<BR><BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_ransac
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_hom_classify
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_aff_classify
+</UL>
+
+<P><STRONG><a name="[e2]"></a>qr_reader_init</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, qrdec.o(i.qr_reader_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = qr_reader_init &rArr; isaac_init &rArr; Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isaac_init
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gf256_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_qr_create
+</UL>
+
+<P><STRONG><a name="[145]"></a>qr_reader_try_configuration</STRONG> (Thumb, 910 bytes, Stack size 464 bytes, qrdec.o(i.qr_reader_try_configuration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2148<LI>Call Chain = qr_reader_try_configuration &rArr; qr_code_decode &rArr; rs_correct &rArr; rs_modified_berlekamp_massey &rArr; rs_poly_mult &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_ilog
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_distance2
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_point_ccw
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_unproject
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_fit
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_version_decode
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_fmt_info_decode
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_estimate_module_size_and_version
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_hom_classify
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_finder_edge_pts_aff_classify
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_unproject
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_aff_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_reader_match_centers
+</UL>
+
+<P><STRONG><a name="[11e]"></a>qr_samples_unpack</STRONG> (Thumb, 642 bytes, Stack size 72 bytes, qrdec.o(i.qr_samples_unpack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = qr_samples_unpack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[11f]"></a>qr_sampling_grid_clear</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, qrdec.o(i.qr_sampling_grid_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = qr_sampling_grid_clear &rArr; Zbar_free &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[147]"></a>qr_sampling_grid_fp_mask_rect</STRONG> (Thumb, 100 bytes, Stack size 32 bytes, qrdec.o(i.qr_sampling_grid_fp_mask_rect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = qr_sampling_grid_fp_mask_rect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_init
+</UL>
+
+<P><STRONG><a name="[11b]"></a>qr_sampling_grid_init</STRONG> (Thumb, 2612 bytes, Stack size 248 bytes, qrdec.o(i.qr_sampling_grid_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 732<LI>Call Chain = qr_sampling_grid_init &rArr; qr_alignment_pattern_search &rArr; qr_finder_locate_crossing
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_malloc
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_free
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_calloc
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_fp_mask_rect
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_project
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_init
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_alignment_pattern_search
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[148]"></a>qr_sampling_grid_is_in_fp</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, qrdec.o(i.qr_sampling_grid_is_in_fp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = qr_sampling_grid_is_in_fp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_sample
+</UL>
+
+<P><STRONG><a name="[11c]"></a>qr_sampling_grid_sample</STRONG> (Thumb, 362 bytes, Stack size 120 bytes, qrdec.o(i.qr_sampling_grid_sample))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = qr_sampling_grid_sample &rArr; qr_data_mask_fill &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_sampling_grid_is_in_fp
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_img_get_bit
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_hom_cell_fproject
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_data_mask_fill
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_decode
+</UL>
+
+<P><STRONG><a name="[113]"></a>sym_add_point</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, qrdectxt.o(i.sym_add_point))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = sym_add_point &rArr; Zbar_realloc &rArr; myrealloc &rArr; myfree &rArr; my_mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_realloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qr_code_data_list_extract_text
+</UL>
+
+<P><STRONG><a name="[14d]"></a>rs_calc_syndrome</STRONG> (Thumb, 80 bytes, Stack size 40 bytes, rs.o(i.rs_calc_syndrome))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rs_calc_syndrome &rArr; rs_hgmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+</UL>
+
+<P><STRONG><a name="[152]"></a>rs_cubic_solve</STRONG> (Thumb, 348 bytes, Stack size 56 bytes, rs.o(i.rs_cubic_solve))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = rs_cubic_solve &rArr; rs_quadratic_solve &rArr; rs_hgmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gmul
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gdiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+</UL>
+
+<P><STRONG><a name="[150]"></a>rs_find_roots</STRONG> (Thumb, 160 bytes, Stack size 48 bytes, rs.o(i.rs_find_roots))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = rs_find_roots &rArr; rs_quartic_solve &rArr;  rs_quartic_solve (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+</UL>
+
+<P><STRONG><a name="[151]"></a>rs_gdiv</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, rs.o(i.rs_gdiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rs_gdiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_cubic_solve
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+</UL>
+
+<P><STRONG><a name="[154]"></a>rs_gmul</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, rs.o(i.rs_gmul))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rs_gmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_cubic_solve
+</UL>
+
+<P><STRONG><a name="[15b]"></a>rs_gsqrt</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, rs.o(i.rs_gsqrt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rs_gsqrt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+</UL>
+
+<P><STRONG><a name="[14e]"></a>rs_hgmul</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, rs.o(i.rs_hgmul))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rs_hgmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_mult
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_init_lambda
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_find_roots
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_calc_syndrome
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+</UL>
+
+<P><STRONG><a name="[156]"></a>rs_init_lambda</STRONG> (Thumb, 88 bytes, Stack size 40 bytes, rs.o(i.rs_init_lambda))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = rs_init_lambda &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_zero
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+</UL>
+
+<P><STRONG><a name="[14f]"></a>rs_modified_berlekamp_massey</STRONG> (Thumb, 262 bytes, Stack size 328 bytes, rs.o(i.rs_modified_berlekamp_massey))
+<BR><BR>[Stack]<UL><LI>Max Depth = 420<LI>Call Chain = rs_modified_berlekamp_massey &rArr; rs_poly_mult &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_mult
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_mul_x
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_copy
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_init_lambda
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_correct
+</UL>
+
+<P><STRONG><a name="[158]"></a>rs_poly_copy</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, rs.o(i.rs_poly_copy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rs_poly_copy &rArr; Zbar_memcpy &rArr; mymemcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+</UL>
+
+<P><STRONG><a name="[159]"></a>rs_poly_mul_x</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, rs.o(i.rs_poly_mul_x))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rs_poly_mul_x &rArr; __aeabi_memmove
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memmove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+</UL>
+
+<P><STRONG><a name="[15a]"></a>rs_poly_mult</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, rs.o(i.rs_poly_mult))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = rs_poly_mult &rArr; rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_zero
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_modified_berlekamp_massey
+</UL>
+
+<P><STRONG><a name="[157]"></a>rs_poly_zero</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, rs.o(i.rs_poly_zero))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = rs_poly_zero &rArr; Zbar_memset &rArr; mymemset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Zbar_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_poly_mult
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_init_lambda
+</UL>
+
+<P><STRONG><a name="[153]"></a>rs_quadratic_solve</STRONG> (Thumb, 550 bytes, Stack size 104 bytes, rs.o(i.rs_quadratic_solve))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = rs_quadratic_solve &rArr; rs_hgmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gsqrt
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gmul
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gdiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_cubic_solve
+</UL>
+
+<P><STRONG><a name="[155]"></a>rs_quartic_solve</STRONG> (Thumb, 412 bytes, Stack size 72 bytes, rs.o(i.rs_quartic_solve))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240 + In Cycle
+<LI>Call Chain = rs_quartic_solve &rArr;  rs_quartic_solve (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quadratic_solve
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_hgmul
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gsqrt
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gmul
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_gdiv
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_cubic_solve
+</UL>
+<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_quartic_solve
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs_find_roots
+</UL>
+
+<P><STRONG><a name="[d6]"></a>decode_e</STRONG> (Thumb, 38 bytes, Stack size 12 bytes, qr_finder.o(i.decode_e))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = decode_e
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_find_qr
+</UL>
+
+<P><STRONG><a name="[d4]"></a>get_width</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, qr_finder.o(i.get_width))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_find_qr
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pair_width
+</UL>
+
+<P><STRONG><a name="[d5]"></a>pair_width</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, qr_finder.o(i.pair_width))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pair_width
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_width
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_zbar_find_qr
+</UL>
+
+<P><STRONG><a name="[a5]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SetSysClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SetSysClock &rArr; SetSysClockTo72
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[a6]"></a>SetSysClockTo72</STRONG> (Thumb, 214 bytes, Stack size 12 bytes, system_stm32f10x.o(i.SetSysClockTo72))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClockTo72
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+</UL>
+
+<P><STRONG><a name="[cf]"></a>_printf_core</STRONG> (Thumb, 984 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0fprintf$8
+</UL>
+
+<P><STRONG><a name="[d2]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[d1]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

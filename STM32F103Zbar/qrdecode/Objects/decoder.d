@@ -1,0 +1,12 @@
+.\objects\decoder.o: lib\zbar\decoder.c
+.\objects\decoder.o: .\lib\zbar\config.h
+.\objects\decoder.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\decoder.o: lib\zbar\zbar_config.h
+.\objects\decoder.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\decoder.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\decoder.o: .\lib\zbar\zbar.h
+.\objects\decoder.o: lib\zbar\decoder.h
+.\objects\decoder.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\decoder.o: lib\zbar\decoder/qr_finder.h
+.\objects\decoder.o: .\lib\zbar\qrcode.h
+.\objects\decoder.o: lib\zbar\debug.h

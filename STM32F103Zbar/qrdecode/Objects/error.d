@@ -1,0 +1,11 @@
+.\objects\error.o: lib\zbar\error.c
+.\objects\error.o: lib\zbar\error.h
+.\objects\error.o: .\lib\zbar\config.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\errno.h
+.\objects\error.o: D:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\error.o: .\lib\zbar\zbar.h
+.\objects\error.o: .\lib\zbar\zbar_config.h

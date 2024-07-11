@@ -1,0 +1,9 @@
+.\objects\scanner.o: lib\zbar\scanner.c
+.\objects\scanner.o: .\lib\zbar\config.h
+.\objects\scanner.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\scanner.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\scanner.o: lib\zbar\zbar_config.h
+.\objects\scanner.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\scanner.o: .\lib\zbar\zbar.h
+.\objects\scanner.o: lib\zbar\svg.h
+.\objects\scanner.o: lib\zbar\debug.h

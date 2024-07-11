@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 lj, 11232, LIC=IC93N-YQSNR-35GTX-HARB8-FB8KV-Y9E1Y
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.29.0.0
+Toolchain Path:  D:\sortware\Embedded\keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+E:\STM32_project\F1\sta  F1\F1_PROJECT\qrdecode\gpio.uvprojx
+Project File Date:  05/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\sortware\Embedded\keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling decoder.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\decoder.c(120): warning:  #188-D: enumerated type mixed with another type
+      dcode->lock = 0;
+lib\zbar\decoder.c(145): warning:  #188-D: enumerated type mixed with another type
+      return(get_color(dcode));
+lib\zbar\decoder.c(228): warning:  #188-D: enumerated type mixed with another type
+              dcode->lock = 0;
+lib\zbar\decoder.c(355): warning:  #111-D: statement is unreachable
+      return(0);
+lib\zbar\decoder.c(378): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(cfg >= 0 && cfg < ZBAR_CFG_NUM)
+lib\zbar\decoder.c: 8 warnings, 0 errors
+compiling main.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration initGPIO - give arg types
+  void initGPIO();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+user\main.c(1646): warning:  #188-D: enumerated type mixed with another type
+      zbar_image_scanner_set_config(scanner, 0, ZBAR_CFG_ENABLE, 1);
+user\main.c(1681): warning:  #1-D: last line of file ends without a newline
+  } 	
+user\main.c(1638): warning:  #177-D: variable "a"  was declared but never referenced
+  	  int a;
+user\main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=46676 RO-data=68688 RW-data=116 ZI-data=1108428  
+FromELF: creating hex file...
+".\Objects\gpio.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: DMA Version: 1.2
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+   * Component: BKP Version: 3.5.0
+   * Component: DBGMCU Version: 3.5.0
+   * Component: DMA Version: 3.5.0
+   * Component: FSMC Version: 3.5.0
+   * Component: Flash Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: GPIO Version: 3.5.0
+   * Component: PWR Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: RTC Version: 3.5.0
+   * Component: SDIO Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103ZE
+  .\RTE\_Target_1
+  C:\Users\lj\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\lj\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  C:\Users\lj\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc
+  C:\Users\lj\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil::Device:DMA:1.2
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:BKP:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_bkp.c
+
+   * Component: Keil::Device:StdPeriph Drivers:DBGMCU:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DMA:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+
+   * Component: Keil::Device:StdPeriph Drivers:FSMC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_fsmc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_fsmc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_pwr.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_pwr.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:SDIO:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_sdio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_sdio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

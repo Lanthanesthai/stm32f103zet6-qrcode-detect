@@ -1,0 +1,540 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A beyourself_he@hotmail.com, A, LIC=NQQMA-1X76C-2Z4W4-FS7ZK-H6EJ0-8WQN2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\beyou\Desktop\aaaaa\STM32F103Zbar\qrdecode\qrcode.uvprojx
+Project File Date:  06/02/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling config.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\config.c(45): warning:  #188-D: enumerated type mixed with another type
+              *sym = 0;
+lib\zbar\config.c(92): warning:  #188-D: enumerated type mixed with another type
+          *sym = 0;
+lib\zbar\config.c: 5 warnings, 0 errors
+compiling error.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\error.c(39): warning:  #83-D: type qualifier specified more than once
+  static const char const * err_str[] = {
+lib\zbar\error.c(112): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(err->module >= ZBAR_MOD_PROCESSOR &&
+lib\zbar\error.c(121): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(err->type >= 0 && err->type < ZBAR_ERR_NUM)
+lib\zbar\error.c: 6 warnings, 0 errors
+compiling symbol.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\symbol.c(186): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "void *"
+      Zbar_memcpy(*buf + n, xmlfmt[2], i + 1);
+lib\zbar\symbol.c(197): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "void *"
+       Zbar_memcpy(*buf + n, xmlfmt[3], i + 1);
+lib\zbar\symbol.c: 5 warnings, 0 errors
+compiling isaac.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\qrcode\isaac.c(104): warning:  #223-D: function "Zbar_memset" declared implicitly
+    Zbar_memset(r+i,0,(ISAAC_SZ-i)*sizeof(*r));
+lib\zbar\qrcode\isaac.c(108): warning:  #223-D: function "Zbar_memcpy" declared implicitly
+      Zbar_memcpy(m+i,x,sizeof(x));
+lib\zbar\qrcode\isaac.c(113): warning:  #223-D: function "Zbar_memcpy" declared implicitly
+      Zbar_memcpy(m+i,x,sizeof(x));
+lib\zbar\qrcode\isaac.c: 5 warnings, 0 errors
+compiling malloc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\Malloc\malloc.c: 2 warnings, 0 errors
+compiling refcnt.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\refcnt.c: 2 warnings, 0 errors
+compiling rs.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\qrcode\rs.c(331): warning:  #223-D: function "Zbar_memset" declared implicitly
+    Zbar_memset(_p,0,_dp1*sizeof(*_p));
+lib\zbar\qrcode\rs.c(335): warning:  #223-D: function "Zbar_memcpy" declared implicitly
+    Zbar_memcpy(_p,_q,_dp1*sizeof(*_p));
+lib\zbar\qrcode\rs.c: 4 warnings, 0 errors
+compiling image.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\image.c(173): warning:  #167-D: argument of type "const void *" is incompatible with parameter of type "void *"
+      Zbar_memcpy((void*)dst->data, src->data, src->datalen);
+lib\zbar\image.c(210): warning:  #550-D: variable "n"  was set but never used
+      int n = 0;
+lib\zbar\image.c: 5 warnings, 0 errors
+compiling qr_finder.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\decoder\qr_finder.c(30): warning:  #188-D: enumerated type mixed with another type
+          return(0);
+lib\zbar\decoder\qr_finder.c(37): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "qz"  (declared at line 57)
+            variable "w"  (declared at line 58)
+          goto invalid;
+          ^
+lib\zbar\decoder\qr_finder.c(42): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "qz"  (declared at line 57)
+            variable "w"  (declared at line 58)
+          goto invalid;
+          ^
+lib\zbar\decoder\qr_finder.c(47): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "qz"  (declared at line 57)
+            variable "w"  (declared at line 58)
+          goto invalid;
+          ^
+lib\zbar\decoder\qr_finder.c(52): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "qz"  (declared at line 57)
+            variable "w"  (declared at line 58)
+          goto invalid;
+          ^
+lib\zbar\decoder\qr_finder.c(74): warning:  #188-D: enumerated type mixed with another type
+      return(0);
+lib\zbar\decoder\qr_finder.c: 9 warnings, 0 errors
+compiling util.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\qrcode\util.c: 2 warnings, 0 errors
+compiling main.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+user\main.c(127): warning:  #177-D: variable "i"  was declared but never referenced
+  	u16 i;
+user\main.c(217): warning:  #550-D: variable "i"  was set but never used
+  		int i=0;
+user\main.c(240): warning:  #177-D: variable "p"  was declared but never referenced
+  int p = 0;
+user\main.c(293): warning:  #188-D: enumerated type mixed with another type
+      zbar_image_scanner_set_config(scanner, 0, ZBAR_CFG_ENABLE, 1);
+user\main.c(328): warning:  #1-D: last line of file ends without a newline
+  } 	
+user\main.c(285): warning:  #177-D: variable "a"  was declared but never referenced
+  	  int a;
+user\main.c: 11 warnings, 0 errors
+compiling 24cxx.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\24CXX\24cxx.c: 4 warnings, 0 errors
+compiling sram.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\sram\sram.c: 2 warnings, 0 errors
+compiling decoder.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\decoder.c(120): warning:  #188-D: enumerated type mixed with another type
+      dcode->lock = 0;
+lib\zbar\decoder.c(145): warning:  #188-D: enumerated type mixed with another type
+      return(get_color(dcode));
+lib\zbar\decoder.c(228): warning:  #188-D: enumerated type mixed with another type
+              dcode->lock = 0;
+lib\zbar\decoder.c(355): warning:  #111-D: statement is unreachable
+      return(0);
+lib\zbar\decoder.c(378): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(cfg >= 0 && cfg < ZBAR_CFG_NUM)
+lib\zbar\decoder.c: 8 warnings, 0 errors
+compiling bch15_5.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\qrcode\bch15_5.c: 2 warnings, 0 errors
+compiling myiic.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\IIC\myiic.c: 4 warnings, 0 errors
+compiling scanner.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\scanner.c(202): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if(tmp < 0 || tmp > edge)
+lib\zbar\scanner.c: 4 warnings, 0 errors
+compiling img_scanner.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\img_scanner.c(230): warning:  #1293-D: assignment in condition
+          if((sym = iscn->recycle[i].head)) {
+lib\zbar\img_scanner.c(441): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "void *"
+      Zbar_memcpy(sym->data, data, datalen + 1);
+lib\zbar\img_scanner.c(474): warning:  #188-D: enumerated type mixed with another type
+      zbar_image_scanner_set_config(iscn, 0, ZBAR_CFG_POSITION, 1);
+lib\zbar\img_scanner.c(678): warning:  #68-D: integer conversion resulted in a change of sign
+              movedelta(-1, density);
+lib\zbar\img_scanner.c(689): warning:  #68-D: integer conversion resulted in a change of sign
+                  movedelta(-1, 0);
+lib\zbar\img_scanner.c(729): warning:  #68-D: integer conversion resulted in a change of sign
+              movedelta(density, -1);
+lib\zbar\img_scanner.c(740): warning:  #68-D: integer conversion resulted in a change of sign
+                  movedelta(0, -1);
+lib\zbar\img_scanner.c(763): warning:  #1293-D: assignment in condition
+          while((sym = *symp)) {
+lib\zbar\img_scanner.c: 11 warnings, 0 errors
+compiling binarize.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\qrcode\binarize.c: 3 warnings, 0 errors
+compiling qrdectxt.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\qrcode\qrdectxt.c(1346): warning:  #177-D: variable "k"  was declared but never referenced
+      uint32_t i = 0, j = 0, k = 0;
+lib\zbar\qrcode\qrdectxt.c(1592): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+              int gb18030_cnt = zbar_utf8_to_gb18030(entry->payload.data.buf, entry->payload.data.len, sa_text+sa_ntext);
+lib\zbar\qrcode\qrdectxt.c(1540): warning:  #177-D: variable "outleft"  was declared but never referenced
+          size_t              outleft;
+lib\zbar\qrcode\qrdectxt.c(1542): warning:  #177-D: variable "out"  was declared but never referenced
+          char               *out;
+lib\zbar\qrcode\qrdectxt.c(1428): warning:  #550-D: variable "enc_list"  was set but never used
+      zbar_iconv_t                   enc_list[3];
+lib\zbar\qrcode\qrdectxt.c(1429): warning:  #550-D: variable "eci_cd"  was set but never used
+      zbar_iconv_t                   eci_cd;
+lib\zbar\qrcode\qrdectxt.c(1436): warning:  #550-D: variable "eci"  was set but never used
+      int                       eci;
+lib\zbar\qrcode\qrdectxt.c(1415): warning:  #550-D: variable "text"  was set but never used
+    char               **text;
+lib\zbar\qrcode\qrdectxt.c(1379): warning:  #177-D: function "text_is_ascii"  was declared but never referenced
+  static int text_is_ascii(const unsigned char *_text,int _len){
+lib\zbar\qrcode\qrdectxt.c(1385): warning:  #177-D: function "text_is_latin1"  was declared but never referenced
+  static int text_is_latin1(const unsigned char *_text,int _len){
+lib\zbar\qrcode\qrdectxt.c(1395): warning:  #177-D: function "enc_list_mtf"  was declared but never referenced
+  static void enc_list_mtf(zbar_iconv_t _enc_list[3],zbar_iconv_t _enc){
+lib\zbar\qrcode\qrdectxt.c: 14 warnings, 0 errors
+compiling init.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\init.c: 4 warnings, 0 errors
+compiling qrdec.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\qrcode\qrdec.c(3214): warning:  #188-D: enumerated type mixed with another type
+      entry->mode=-1;
+lib\zbar\qrcode\qrdec.c(3214): warning:  #68-D: integer conversion resulted in a change of sign
+      entry->mode=-1;
+lib\zbar\qrcode\qrdec.c(3236): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3275): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3296): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3318): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3324): warning:  #188-D: enumerated type mixed with another type
+        case QR_MODE_FNC1_1ST:entry->mode=mode;break;
+lib\zbar\qrcode\qrdec.c(3352): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3364): warning:  #188-D: enumerated type mixed with another type
+          entry->mode=mode;
+lib\zbar\qrcode\qrdec.c(3379): warning:  #188-D: enumerated type mixed with another type
+        case QR_MODE_FNC1_2ND:entry->mode=mode;break;
+lib\zbar\qrcode\qrdec.c(3386): warning:  #111-D: statement is unreachable
+        }break;
+lib\zbar\qrcode\qrdec.c(3888): warning:  #167-D: argument of type "const qr_finder_line *" is incompatible with parameter of type "void *"
+       Zbar_memcpy(lines->lines + lines->nlines++, line, sizeof(*line));
+lib\zbar\qrcode\qrdec.c: 15 warnings, 0 errors
+compiling lcd.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\LCD\lcd.c: 4 warnings, 0 errors
+compiling zbar_config.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\zbar\zbar_config.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\zbar\zbar_config.c: 3 warnings, 0 errors
+compiling ov7670.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\ov7670\ov7670.c: 4 warnings, 0 errors
+compiling sccb.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\sccb\sccb.c: 4 warnings, 0 errors
+compiling time.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+.\lib\init.h(8): warning:  #1295-D: Deprecated declaration GPIO_Config - give arg types
+  void GPIO_Config();
+.\lib\init.h(12): warning:  #1295-D: Deprecated declaration USART_Config - give arg types
+  void USART_Config();
+lib\time\time.c: 4 warnings, 0 errors
+compiling sys.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\sys\sys.c: 2 warnings, 0 errors
+compiling SPI.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\SPI\SPI.c: 2 warnings, 0 errors
+compiling my_stm32f10x_exti.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\my_stm32f10x_exti\my_stm32f10x_exti.c: 2 warnings, 0 errors
+compiling my_stm32f10x_spi.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\my_stm32f10x_spi\my_stm32f10x_spi.c: 2 warnings, 0 errors
+compiling Buzzle.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\buzzle\Buzzle.c: 2 warnings, 0 errors
+compiling led.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+lib\led\led.c: 2 warnings, 0 errors
+compiling misc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\misc.c: 2 warnings, 0 errors
+compiling stm32f10x_bkp.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_bkp.c: 2 warnings, 0 errors
+compiling stm32f10x_dbgmcu.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c: 2 warnings, 0 errors
+compiling stm32f10x_dma.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_dma.c: 2 warnings, 0 errors
+compiling stm32f10x_flash.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_flash.c: 2 warnings, 0 errors
+compiling stm32f10x_fsmc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_fsmc.c: 2 warnings, 0 errors
+compiling stm32f10x_gpio.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_gpio.c: 2 warnings, 0 errors
+compiling stm32f10x_pwr.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_pwr.c: 2 warnings, 0 errors
+compiling stm32f10x_rcc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_rcc.c: 2 warnings, 0 errors
+compiling stm32f10x_rtc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_rtc.c: 2 warnings, 0 errors
+compiling stm32f10x_sdio.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_sdio.c: 2 warnings, 0 errors
+assembling startup_stm32f10x_hd.s...
+compiling DMA_STM32F10x.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\RTE_Driver\DMA_STM32F10x.c: 2 warnings, 0 errors
+compiling stm32f10x_tim.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_tim.c: 2 warnings, 0 errors
+compiling stm32f10x_usart.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_usart.c: 2 warnings, 0 errors
+compiling GPIO_STM32F10x.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\RTE_Driver\GPIO_STM32F10x.c: 2 warnings, 0 errors
+compiling system_stm32f10x.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+"no source": Warning:  #2774-D: '=' assumed following macro name "STM32F10X_HD" in command-line definition
+RTE\Device\STM32F103ZE\system_stm32f10x.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=51148 RO-data=43424 RW-data=124 ZI-data=1198676  
+FromELF: creating hex file...
+".\Objects\qrcode.axf" - 0 Error(s), 190 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: DMA Version: 1.3
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+   * Component: BKP Version: 3.6.0
+   * Component: DBGMCU Version: 3.6.0
+   * Component: DMA Version: 3.6.0
+   * Component: FSMC Version: 3.6.0
+   * Component: Flash Version: 3.6.0
+   * Component: Framework Version: 3.6.0
+   * Component: GPIO Version: 3.6.0
+   * Component: PWR Version: 3.6.0
+   * Component: RCC Version: 3.6.0
+   * Component: RTC Version: 3.6.0
+   * Component: SDIO Version: 3.6.0
+   * Component: TIM Version: 3.6.0
+   * Component: USART Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103ZE
+  .\RTE\_Target_1
+  D:\Keil Files\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+  D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
+  D:\Keil Files\Keil\STM32F1xx_DFP\2.4.1\RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:DMA:1.3
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+
+   * Component: Keil::Device:GPIO:1.3
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:BKP:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_bkp.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DBGMCU:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c
+
+   * Component: Keil::Device:StdPeriph Drivers:DMA:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+
+   * Component: Keil::Device:StdPeriph Drivers:FSMC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_fsmc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_fsmc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_pwr.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_pwr.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SDIO:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_sdio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_sdio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

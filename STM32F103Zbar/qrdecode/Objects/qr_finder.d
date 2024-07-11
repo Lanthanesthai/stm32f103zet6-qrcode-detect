@@ -1,0 +1,11 @@
+.\objects\qr_finder.o: lib\zbar\decoder\qr_finder.c
+.\objects\qr_finder.o: .\lib\zbar\config.h
+.\objects\qr_finder.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\qr_finder.o: D:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\qr_finder.o: .\lib\zbar\zbar.h
+.\objects\qr_finder.o: .\lib\zbar\zbar_config.h
+.\objects\qr_finder.o: .\lib\zbar\decoder.h
+.\objects\qr_finder.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\qr_finder.o: .\lib\zbar\decoder/qr_finder.h
+.\objects\qr_finder.o: .\lib\zbar\qrcode.h
+.\objects\qr_finder.o: .\lib\zbar\debug.h

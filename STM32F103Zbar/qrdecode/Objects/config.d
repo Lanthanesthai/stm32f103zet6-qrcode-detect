@@ -1,0 +1,9 @@
+.\objects\config.o: lib\zbar\config.c
+.\objects\config.o: .\lib\zbar\config.h
+.\objects\config.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\config.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\config.o: lib\zbar\zbar_config.h
+.\objects\config.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\config.o: D:\Keil\ARM\ARMCC\Bin\..\include\errno.h
+.\objects\config.o: D:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\config.o: .\lib\zbar\zbar.h
